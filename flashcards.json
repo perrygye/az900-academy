@@ -1,0 +1,227 @@
+[
+  {
+    "moduleId": "cloud",
+    "front": "Horizontale Skalierung",
+    "back": "mehr Instanzen hinzufügen. Merksatz: Horizontal = mehr"
+  },
+  {
+    "moduleId": "cloud",
+    "front": "Vertikale Skalierung",
+    "back": "größere Instanz nutzen. Merksatz: Vertikal = größer"
+  },
+  {
+    "moduleId": "cloud",
+    "front": "Elastizität",
+    "back": "automatisch nach Bedarf skalieren. Merksatz: Elastisch = Gummiband"
+  },
+  {
+    "moduleId": "cloud",
+    "front": "Hochverfügbarkeit",
+    "back": "Ausfallzeiten minimieren. Merksatz: HA = erreichbar bleiben"
+  },
+  {
+    "moduleId": "cloud",
+    "front": "Notfallwiederherstellung",
+    "back": "nach Ausfall wiederherstellen. Merksatz: DR = Backup/Replikation"
+  },
+  {
+    "moduleId": "service",
+    "front": "IaaS",
+    "back": "Infrastruktur mit OS-Kontrolle nutzen. Merksatz: VM = IaaS"
+  },
+  {
+    "moduleId": "service",
+    "front": "PaaS",
+    "back": "Apps entwickeln ohne Serververwaltung. Merksatz: Code ohne Serverpflege"
+  },
+  {
+    "moduleId": "service",
+    "front": "SaaS",
+    "back": "fertige Software abonnieren. Merksatz: SaaS = fertige App"
+  },
+  {
+    "moduleId": "service",
+    "front": "Shared Responsibility",
+    "back": "Verantwortung je nach Modell teilen. Merksatz: Je mehr SaaS, desto weniger Kunde"
+  },
+  {
+    "moduleId": "arch",
+    "front": "Verfügbarkeitszonen",
+    "back": "physisch getrennte Rechenzentren innerhalb einer Region nutzen. Merksatz: Zone = innerhalb"
+  },
+  {
+    "moduleId": "arch",
+    "front": "Regionspaare",
+    "back": "zwei gekoppelte Regionen für DR nutzen. Merksatz: Pair = zwei Regionen"
+  },
+  {
+    "moduleId": "arch",
+    "front": "Ressourcengruppe",
+    "back": "Ressourcen logisch gruppieren. Merksatz: RG = Ressourcen-Ordner"
+  },
+  {
+    "moduleId": "arch",
+    "front": "Abonnement",
+    "back": "Abrechnung und Limits verwalten. Merksatz: Abo = Rechnung"
+  },
+  {
+    "moduleId": "arch",
+    "front": "Verwaltungsgruppe",
+    "back": "mehrere Abos zentral organisieren. Merksatz: MG = Abo-Ordner"
+  },
+  {
+    "moduleId": "storage",
+    "front": "Azure Blob Storage",
+    "back": "unstrukturierte Daten speichern. Merksatz: Blob = Bilder/Videos/PDFs"
+  },
+  {
+    "moduleId": "storage",
+    "front": "Azure Files",
+    "back": "Dateifreigaben bereitstellen. Merksatz: Files = Netzlaufwerk"
+  },
+  {
+    "moduleId": "storage",
+    "front": "Queue Storage",
+    "back": "Nachrichten zwischen Komponenten speichern. Merksatz: Queue = Warteschlange"
+  },
+  {
+    "moduleId": "storage",
+    "front": "Table Storage",
+    "back": "NoSQL-Key-Value-Daten speichern. Merksatz: Table = NoSQL"
+  },
+  {
+    "moduleId": "network",
+    "front": "VPN Gateway",
+    "back": "verschlüsseltes Site-to-Site VPN herstellen. Merksatz: VPN = Tunnel"
+  },
+  {
+    "moduleId": "network",
+    "front": "ExpressRoute",
+    "back": "private Verbindung zu Azure herstellen. Merksatz: ExpressRoute = private Leitung"
+  },
+  {
+    "moduleId": "network",
+    "front": "Azure Bastion",
+    "back": "VM-Zugriff ohne öffentliche IP ermöglichen. Merksatz: Bastion = sicherer Zugang"
+  },
+  {
+    "moduleId": "network",
+    "front": "VNet",
+    "back": "private Netzwerke in Azure erstellen. Merksatz: VNet = eigenes Azure-Netz"
+  },
+  {
+    "moduleId": "network",
+    "front": "NSG",
+    "back": "Netzwerkverkehr filtern. Merksatz: NSG = Firewall-Regeln"
+  },
+  {
+    "moduleId": "identity",
+    "front": "Microsoft Entra ID",
+    "back": "Identitäten und Zugriff verwalten. Merksatz: Entra = Identität"
+  },
+  {
+    "moduleId": "identity",
+    "front": "MFA",
+    "back": "zusätzlichen Anmeldefaktor verlangen. Merksatz: MFA = zweiter Faktor"
+  },
+  {
+    "moduleId": "identity",
+    "front": "SSO",
+    "back": "einmal anmelden und mehrere Apps nutzen. Merksatz: SSO = einmal anmelden"
+  },
+  {
+    "moduleId": "identity",
+    "front": "Conditional Access",
+    "back": "Zugriff abhängig von Bedingungen steuern. Merksatz: Wenn-Dann-Zugriff"
+  },
+  {
+    "moduleId": "identity",
+    "front": "Entra Connect Sync",
+    "back": "lokales AD mit Entra ID synchronisieren. Merksatz: AD ↔ Entra"
+  },
+  {
+    "moduleId": "governance",
+    "front": "Azure Policy",
+    "back": "Regeln für Ressourcen erzwingen. Merksatz: Policy = Regeln"
+  },
+  {
+    "moduleId": "governance",
+    "front": "RBAC",
+    "back": "Berechtigungen vergeben. Merksatz: RBAC = Rechte"
+  },
+  {
+    "moduleId": "governance",
+    "front": "Resource Lock",
+    "back": "Löschen/Ändern verhindern. Merksatz: Lock = Schutz"
+  },
+  {
+    "moduleId": "governance",
+    "front": "Tags",
+    "back": "Kosten/Ressourcen kennzeichnen. Merksatz: Tags = Etiketten"
+  },
+  {
+    "moduleId": "governance",
+    "front": "Azure Arc",
+    "back": "lokale/Multi-Cloud Ressourcen verwalten. Merksatz: Arc = Azure überall"
+  },
+  {
+    "moduleId": "management",
+    "front": "Azure Resource Manager",
+    "back": "Azure-Ressourcen bereitstellen und verwalten. Merksatz: ARM = Ressourcen"
+  },
+  {
+    "moduleId": "management",
+    "front": "ARM Templates",
+    "back": "wiederholbare Infrastruktur bereitstellen. Merksatz: Template = Bauplan"
+  },
+  {
+    "moduleId": "management",
+    "front": "Azure CLI",
+    "back": "Azure per Bash verwalten. Merksatz: Bash = CLI"
+  },
+  {
+    "moduleId": "management",
+    "front": "Azure Cloud Shell",
+    "back": "Shell im Browser nutzen. Merksatz: Cloud Shell = Browser"
+  },
+  {
+    "moduleId": "management",
+    "front": "Azure Monitor",
+    "back": "Metriken und Logs sammeln. Merksatz: Monitor = Messwerte"
+  },
+  {
+    "moduleId": "management",
+    "front": "Azure Advisor",
+    "back": "Optimierungsempfehlungen erhalten. Merksatz: Advisor = Berater"
+  },
+  {
+    "moduleId": "management",
+    "front": "Azure Service Health",
+    "back": "Azure-Ausfälle und Wartungen melden. Merksatz: Azure kaputt = Service Health"
+  },
+  {
+    "moduleId": "costs",
+    "front": "Azure Preisrechner",
+    "back": "Kosten vor Bereitstellung schätzen. Merksatz: Vorher = Preisrechner"
+  },
+  {
+    "moduleId": "costs",
+    "front": "Cost Management",
+    "back": "laufende Kosten analysieren. Merksatz: Nachher = Kostenkontrolle"
+  },
+  {
+    "moduleId": "costs",
+    "front": "Reservations",
+    "back": "Kosten durch Nutzungszusage senken. Merksatz: Commitment spart"
+  },
+  {
+    "moduleId": "costs",
+    "front": "SLA",
+    "back": "Verfügbarkeitszusage beschreiben. Merksatz: SLA = Versprechen"
+  },
+  {
+    "moduleId": "costs",
+    "front": "TCO Calculator",
+    "back": "Cloudmigration wirtschaftlich vergleichen. Merksatz: TCO = Gesamtvergleich"
+  }
+]

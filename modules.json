@@ -1,0 +1,56 @@
+[
+  {
+    "id": "cloud",
+    "title": "V1 Cloud Concepts",
+    "stage": "V1",
+    "unlock": 0
+  },
+  {
+    "id": "service",
+    "title": "V1 Diensttypen",
+    "stage": "V1",
+    "unlock": 0
+  },
+  {
+    "id": "arch",
+    "title": "V2 Architektur",
+    "stage": "V2",
+    "unlock": 15
+  },
+  {
+    "id": "storage",
+    "title": "V2 Storage",
+    "stage": "V2",
+    "unlock": 15
+  },
+  {
+    "id": "network",
+    "title": "V2 Netzwerk",
+    "stage": "V2",
+    "unlock": 15
+  },
+  {
+    "id": "identity",
+    "title": "V3 Identity & Security",
+    "stage": "V3",
+    "unlock": 35
+  },
+  {
+    "id": "governance",
+    "title": "V3 Governance",
+    "stage": "V3",
+    "unlock": 35
+  },
+  {
+    "id": "management",
+    "title": "Endgame Management & Monitoring",
+    "stage": "Endgame",
+    "unlock": 60
+  },
+  {
+    "id": "costs",
+    "title": "Endgame Kosten & SLA",
+    "stage": "Endgame",
+    "unlock": 60
+  }
+]

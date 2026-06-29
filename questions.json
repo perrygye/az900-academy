@@ -1,0 +1,2762 @@
+[
+  {
+    "id": "q0001",
+    "moduleId": "cloud",
+    "level": 1,
+    "type": "single",
+    "question": "Ein Unternehmen möchte mehr Instanzen hinzufügen. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Notfallwiederherstellung",
+      "Horizontale Skalierung",
+      "Shared Responsibility",
+      "Vertikale Skalierung"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Horizontale Skalierung ist richtig: mehr Instanzen hinzufügen.",
+    "tip": "Horizontal = mehr",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Cloud Concepts"
+  },
+  {
+    "id": "q0002",
+    "moduleId": "cloud",
+    "level": 1,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um mehr Instanzen hinzufügen?",
+    "options": [
+      "Horizontale Skalierung",
+      "PaaS",
+      "VPN Gateway",
+      "Azure Service Health"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Horizontale Skalierung ist richtig: mehr Instanzen hinzufügen.",
+    "tip": "Horizontal = mehr",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Cloud Concepts"
+  },
+  {
+    "id": "q0003",
+    "moduleId": "cloud",
+    "level": 1,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: mehr Instanzen hinzufügen. Was empfehlen Sie?",
+    "options": [
+      "Entra Connect Sync",
+      "Resource Lock",
+      "Azure Files",
+      "Horizontale Skalierung"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Horizontale Skalierung ist richtig: mehr Instanzen hinzufügen.",
+    "tip": "Horizontal = mehr",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Cloud Concepts"
+  },
+  {
+    "id": "q0004",
+    "moduleId": "cloud",
+    "level": 1,
+    "type": "single",
+    "question": "Ein Unternehmen möchte größere Instanz nutzen. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Vertikale Skalierung",
+      "SSO",
+      "Conditional Access",
+      "ARM Templates"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Vertikale Skalierung ist richtig: größere Instanz nutzen.",
+    "tip": "Vertikal = größer",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Cloud Concepts"
+  },
+  {
+    "id": "q0005",
+    "moduleId": "cloud",
+    "level": 1,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um größere Instanz nutzen?",
+    "options": [
+      "SaaS",
+      "Entra Connect Sync",
+      "Vertikale Skalierung",
+      "Azure Resource Manager"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Vertikale Skalierung ist richtig: größere Instanz nutzen.",
+    "tip": "Vertikal = größer",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Cloud Concepts"
+  },
+  {
+    "id": "q0006",
+    "moduleId": "cloud",
+    "level": 1,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: größere Instanz nutzen. Was empfehlen Sie?",
+    "options": [
+      "Horizontale Skalierung",
+      "SSO",
+      "Vertikale Skalierung",
+      "TCO Calculator"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Vertikale Skalierung ist richtig: größere Instanz nutzen.",
+    "tip": "Vertikal = größer",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Cloud Concepts"
+  },
+  {
+    "id": "q0007",
+    "moduleId": "cloud",
+    "level": 1,
+    "type": "single",
+    "question": "Ein Unternehmen möchte automatisch nach Bedarf skalieren. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Tags",
+      "Table Storage",
+      "Elastizität",
+      "Regionspaare"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Elastizität ist richtig: automatisch nach Bedarf skalieren.",
+    "tip": "Elastisch = Gummiband",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Cloud Concepts"
+  },
+  {
+    "id": "q0008",
+    "moduleId": "cloud",
+    "level": 1,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um automatisch nach Bedarf skalieren?",
+    "options": [
+      "Hochverfügbarkeit",
+      "SSO",
+      "Cost Management",
+      "Elastizität"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Elastizität ist richtig: automatisch nach Bedarf skalieren.",
+    "tip": "Elastisch = Gummiband",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Cloud Concepts"
+  },
+  {
+    "id": "q0009",
+    "moduleId": "cloud",
+    "level": 1,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: automatisch nach Bedarf skalieren. Was empfehlen Sie?",
+    "options": [
+      "Azure Bastion",
+      "VPN Gateway",
+      "Elastizität",
+      "Hochverfügbarkeit"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Elastizität ist richtig: automatisch nach Bedarf skalieren.",
+    "tip": "Elastisch = Gummiband",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Cloud Concepts"
+  },
+  {
+    "id": "q0010",
+    "moduleId": "cloud",
+    "level": 1,
+    "type": "single",
+    "question": "Ein Unternehmen möchte Ausfallzeiten minimieren. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Hochverfügbarkeit",
+      "Azure Arc",
+      "Azure Monitor",
+      "SSO"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Hochverfügbarkeit ist richtig: Ausfallzeiten minimieren.",
+    "tip": "HA = erreichbar bleiben",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Cloud Concepts"
+  },
+  {
+    "id": "q0011",
+    "moduleId": "cloud",
+    "level": 1,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um Ausfallzeiten minimieren?",
+    "options": [
+      "Abonnement",
+      "Hochverfügbarkeit",
+      "Cost Management",
+      "Entra Connect Sync"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Hochverfügbarkeit ist richtig: Ausfallzeiten minimieren.",
+    "tip": "HA = erreichbar bleiben",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Cloud Concepts"
+  },
+  {
+    "id": "q0012",
+    "moduleId": "cloud",
+    "level": 1,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: Ausfallzeiten minimieren. Was empfehlen Sie?",
+    "options": [
+      "Azure Monitor",
+      "Ressourcengruppe",
+      "RBAC",
+      "Hochverfügbarkeit"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Hochverfügbarkeit ist richtig: Ausfallzeiten minimieren.",
+    "tip": "HA = erreichbar bleiben",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Cloud Concepts"
+  },
+  {
+    "id": "q0013",
+    "moduleId": "cloud",
+    "level": 1,
+    "type": "single",
+    "question": "Ein Unternehmen möchte nach Ausfall wiederherstellen. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Verfügbarkeitszonen",
+      "TCO Calculator",
+      "Azure Policy",
+      "Notfallwiederherstellung"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Notfallwiederherstellung ist richtig: nach Ausfall wiederherstellen.",
+    "tip": "DR = Backup/Replikation",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Cloud Concepts"
+  },
+  {
+    "id": "q0014",
+    "moduleId": "cloud",
+    "level": 1,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um nach Ausfall wiederherstellen?",
+    "options": [
+      "Notfallwiederherstellung",
+      "Cost Management",
+      "SSO",
+      "Azure Blob Storage"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Notfallwiederherstellung ist richtig: nach Ausfall wiederherstellen.",
+    "tip": "DR = Backup/Replikation",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Cloud Concepts"
+  },
+  {
+    "id": "q0015",
+    "moduleId": "cloud",
+    "level": 1,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: nach Ausfall wiederherstellen. Was empfehlen Sie?",
+    "options": [
+      "ARM Templates",
+      "Verwaltungsgruppe",
+      "Notfallwiederherstellung",
+      "Vertikale Skalierung"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Notfallwiederherstellung ist richtig: nach Ausfall wiederherstellen.",
+    "tip": "DR = Backup/Replikation",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Cloud Concepts"
+  },
+  {
+    "id": "q0016",
+    "moduleId": "service",
+    "level": 1,
+    "type": "single",
+    "question": "Ein Unternehmen möchte Infrastruktur mit OS-Kontrolle nutzen. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "IaaS",
+      "Azure Resource Manager",
+      "Reservations",
+      "VPN Gateway"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "IaaS ist richtig: Infrastruktur mit OS-Kontrolle nutzen.",
+    "tip": "VM = IaaS",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Diensttypen"
+  },
+  {
+    "id": "q0017",
+    "moduleId": "service",
+    "level": 1,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um Infrastruktur mit OS-Kontrolle nutzen?",
+    "options": [
+      "IaaS",
+      "Azure Service Health",
+      "Azure CLI",
+      "Azure Files"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "IaaS ist richtig: Infrastruktur mit OS-Kontrolle nutzen.",
+    "tip": "VM = IaaS",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Diensttypen"
+  },
+  {
+    "id": "q0018",
+    "moduleId": "service",
+    "level": 1,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: Infrastruktur mit OS-Kontrolle nutzen. Was empfehlen Sie?",
+    "options": [
+      "Azure Cloud Shell",
+      "Azure Bastion",
+      "Hochverfügbarkeit",
+      "IaaS"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "IaaS ist richtig: Infrastruktur mit OS-Kontrolle nutzen.",
+    "tip": "VM = IaaS",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Diensttypen"
+  },
+  {
+    "id": "q0019",
+    "moduleId": "service",
+    "level": 1,
+    "type": "single",
+    "question": "Ein Unternehmen möchte Apps entwickeln ohne Serververwaltung. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "NSG",
+      "Elastizität",
+      "PaaS",
+      "Vertikale Skalierung"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "PaaS ist richtig: Apps entwickeln ohne Serververwaltung.",
+    "tip": "Code ohne Serverpflege",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Diensttypen"
+  },
+  {
+    "id": "q0020",
+    "moduleId": "service",
+    "level": 1,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um Apps entwickeln ohne Serververwaltung?",
+    "options": [
+      "PaaS",
+      "Conditional Access",
+      "Vertikale Skalierung",
+      "SLA"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "PaaS ist richtig: Apps entwickeln ohne Serververwaltung.",
+    "tip": "Code ohne Serverpflege",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Diensttypen"
+  },
+  {
+    "id": "q0021",
+    "moduleId": "service",
+    "level": 1,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: Apps entwickeln ohne Serververwaltung. Was empfehlen Sie?",
+    "options": [
+      "PaaS",
+      "Tags",
+      "Verfügbarkeitszonen",
+      "TCO Calculator"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "PaaS ist richtig: Apps entwickeln ohne Serververwaltung.",
+    "tip": "Code ohne Serverpflege",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Diensttypen"
+  },
+  {
+    "id": "q0022",
+    "moduleId": "service",
+    "level": 1,
+    "type": "single",
+    "question": "Ein Unternehmen möchte fertige Software abonnieren. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Tags",
+      "ARM Templates",
+      "SaaS",
+      "NSG"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "SaaS ist richtig: fertige Software abonnieren.",
+    "tip": "SaaS = fertige App",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Diensttypen"
+  },
+  {
+    "id": "q0023",
+    "moduleId": "service",
+    "level": 1,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um fertige Software abonnieren?",
+    "options": [
+      "SaaS",
+      "Table Storage",
+      "Vertikale Skalierung",
+      "Reservations"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "SaaS ist richtig: fertige Software abonnieren.",
+    "tip": "SaaS = fertige App",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Diensttypen"
+  },
+  {
+    "id": "q0024",
+    "moduleId": "service",
+    "level": 1,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: fertige Software abonnieren. Was empfehlen Sie?",
+    "options": [
+      "Queue Storage",
+      "SaaS",
+      "ExpressRoute",
+      "Hochverfügbarkeit"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "SaaS ist richtig: fertige Software abonnieren.",
+    "tip": "SaaS = fertige App",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Diensttypen"
+  },
+  {
+    "id": "q0025",
+    "moduleId": "service",
+    "level": 1,
+    "type": "single",
+    "question": "Ein Unternehmen möchte Verantwortung je nach Modell teilen. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Resource Lock",
+      "Shared Responsibility",
+      "Table Storage",
+      "MFA"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Shared Responsibility ist richtig: Verantwortung je nach Modell teilen.",
+    "tip": "Je mehr SaaS, desto weniger Kunde",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Diensttypen"
+  },
+  {
+    "id": "q0026",
+    "moduleId": "service",
+    "level": 1,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um Verantwortung je nach Modell teilen?",
+    "options": [
+      "Azure Monitor",
+      "Regionspaare",
+      "Azure Arc",
+      "Shared Responsibility"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Shared Responsibility ist richtig: Verantwortung je nach Modell teilen.",
+    "tip": "Je mehr SaaS, desto weniger Kunde",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Diensttypen"
+  },
+  {
+    "id": "q0027",
+    "moduleId": "service",
+    "level": 1,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: Verantwortung je nach Modell teilen. Was empfehlen Sie?",
+    "options": [
+      "ARM Templates",
+      "PaaS",
+      "Azure Bastion",
+      "Shared Responsibility"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Shared Responsibility ist richtig: Verantwortung je nach Modell teilen.",
+    "tip": "Je mehr SaaS, desto weniger Kunde",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Diensttypen"
+  },
+  {
+    "id": "q0028",
+    "moduleId": "arch",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Unternehmen möchte physisch getrennte Rechenzentren innerhalb einer Region nutzen. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Verfügbarkeitszonen",
+      "NSG",
+      "Azure Monitor",
+      "TCO Calculator"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Verfügbarkeitszonen ist richtig: physisch getrennte Rechenzentren innerhalb einer Region nutzen.",
+    "tip": "Zone = innerhalb",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Architektur"
+  },
+  {
+    "id": "q0029",
+    "moduleId": "arch",
+    "level": 2,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um physisch getrennte Rechenzentren innerhalb einer Region nutzen?",
+    "options": [
+      "Verwaltungsgruppe",
+      "Verfügbarkeitszonen",
+      "Azure Resource Manager",
+      "Azure Cloud Shell"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Verfügbarkeitszonen ist richtig: physisch getrennte Rechenzentren innerhalb einer Region nutzen.",
+    "tip": "Zone = innerhalb",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Architektur"
+  },
+  {
+    "id": "q0030",
+    "moduleId": "arch",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: physisch getrennte Rechenzentren innerhalb einer Region nutzen. Was empfehlen Sie?",
+    "options": [
+      "Microsoft Entra ID",
+      "Tags",
+      "ARM Templates",
+      "Verfügbarkeitszonen"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Verfügbarkeitszonen ist richtig: physisch getrennte Rechenzentren innerhalb einer Region nutzen.",
+    "tip": "Zone = innerhalb",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Architektur"
+  },
+  {
+    "id": "q0031",
+    "moduleId": "arch",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Unternehmen möchte zwei gekoppelte Regionen für DR nutzen. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Shared Responsibility",
+      "VNet",
+      "Notfallwiederherstellung",
+      "Regionspaare"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Regionspaare ist richtig: zwei gekoppelte Regionen für DR nutzen.",
+    "tip": "Pair = zwei Regionen",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Architektur"
+  },
+  {
+    "id": "q0032",
+    "moduleId": "arch",
+    "level": 2,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um zwei gekoppelte Regionen für DR nutzen?",
+    "options": [
+      "Tags",
+      "Shared Responsibility",
+      "Regionspaare",
+      "NSG"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Regionspaare ist richtig: zwei gekoppelte Regionen für DR nutzen.",
+    "tip": "Pair = zwei Regionen",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Architektur"
+  },
+  {
+    "id": "q0033",
+    "moduleId": "arch",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: zwei gekoppelte Regionen für DR nutzen. Was empfehlen Sie?",
+    "options": [
+      "Shared Responsibility",
+      "Regionspaare",
+      "Azure Blob Storage",
+      "Queue Storage"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Regionspaare ist richtig: zwei gekoppelte Regionen für DR nutzen.",
+    "tip": "Pair = zwei Regionen",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Architektur"
+  },
+  {
+    "id": "q0034",
+    "moduleId": "arch",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Unternehmen möchte Ressourcen logisch gruppieren. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Azure CLI",
+      "Ressourcengruppe",
+      "Vertikale Skalierung",
+      "Tags"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Ressourcengruppe ist richtig: Ressourcen logisch gruppieren.",
+    "tip": "RG = Ressourcen-Ordner",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Architektur"
+  },
+  {
+    "id": "q0035",
+    "moduleId": "arch",
+    "level": 2,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um Ressourcen logisch gruppieren?",
+    "options": [
+      "Regionspaare",
+      "Queue Storage",
+      "Ressourcengruppe",
+      "Entra Connect Sync"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Ressourcengruppe ist richtig: Ressourcen logisch gruppieren.",
+    "tip": "RG = Ressourcen-Ordner",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Architektur"
+  },
+  {
+    "id": "q0036",
+    "moduleId": "arch",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: Ressourcen logisch gruppieren. Was empfehlen Sie?",
+    "options": [
+      "Azure Arc",
+      "Ressourcengruppe",
+      "NSG",
+      "SLA"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Ressourcengruppe ist richtig: Ressourcen logisch gruppieren.",
+    "tip": "RG = Ressourcen-Ordner",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Architektur"
+  },
+  {
+    "id": "q0037",
+    "moduleId": "arch",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Unternehmen möchte Abrechnung und Limits verwalten. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Microsoft Entra ID",
+      "Abonnement",
+      "Hochverfügbarkeit",
+      "Entra Connect Sync"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Abonnement ist richtig: Abrechnung und Limits verwalten.",
+    "tip": "Abo = Rechnung",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Architektur"
+  },
+  {
+    "id": "q0038",
+    "moduleId": "arch",
+    "level": 2,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um Abrechnung und Limits verwalten?",
+    "options": [
+      "Abonnement",
+      "Reservations",
+      "Vertikale Skalierung",
+      "Azure Resource Manager"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Abonnement ist richtig: Abrechnung und Limits verwalten.",
+    "tip": "Abo = Rechnung",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Architektur"
+  },
+  {
+    "id": "q0039",
+    "moduleId": "arch",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: Abrechnung und Limits verwalten. Was empfehlen Sie?",
+    "options": [
+      "MFA",
+      "Verfügbarkeitszonen",
+      "ExpressRoute",
+      "Abonnement"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Abonnement ist richtig: Abrechnung und Limits verwalten.",
+    "tip": "Abo = Rechnung",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Architektur"
+  },
+  {
+    "id": "q0040",
+    "moduleId": "arch",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Unternehmen möchte mehrere Abos zentral organisieren. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "SaaS",
+      "Conditional Access",
+      "Tags",
+      "Verwaltungsgruppe"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Verwaltungsgruppe ist richtig: mehrere Abos zentral organisieren.",
+    "tip": "MG = Abo-Ordner",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Architektur"
+  },
+  {
+    "id": "q0041",
+    "moduleId": "arch",
+    "level": 2,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um mehrere Abos zentral organisieren?",
+    "options": [
+      "Verwaltungsgruppe",
+      "Shared Responsibility",
+      "SaaS",
+      "SLA"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Verwaltungsgruppe ist richtig: mehrere Abos zentral organisieren.",
+    "tip": "MG = Abo-Ordner",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Architektur"
+  },
+  {
+    "id": "q0042",
+    "moduleId": "arch",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: mehrere Abos zentral organisieren. Was empfehlen Sie?",
+    "options": [
+      "Azure Arc",
+      "Abonnement",
+      "MFA",
+      "Verwaltungsgruppe"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Verwaltungsgruppe ist richtig: mehrere Abos zentral organisieren.",
+    "tip": "MG = Abo-Ordner",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Architektur"
+  },
+  {
+    "id": "q0043",
+    "moduleId": "storage",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Unternehmen möchte unstrukturierte Daten speichern. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Azure Blob Storage",
+      "IaaS",
+      "Cost Management",
+      "RBAC"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Azure Blob Storage ist richtig: unstrukturierte Daten speichern.",
+    "tip": "Blob = Bilder/Videos/PDFs",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Storage"
+  },
+  {
+    "id": "q0044",
+    "moduleId": "storage",
+    "level": 2,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um unstrukturierte Daten speichern?",
+    "options": [
+      "Conditional Access",
+      "Azure Monitor",
+      "Azure Blob Storage",
+      "Table Storage"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Azure Blob Storage ist richtig: unstrukturierte Daten speichern.",
+    "tip": "Blob = Bilder/Videos/PDFs",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Storage"
+  },
+  {
+    "id": "q0045",
+    "moduleId": "storage",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: unstrukturierte Daten speichern. Was empfehlen Sie?",
+    "options": [
+      "Azure Blob Storage",
+      "Verwaltungsgruppe",
+      "ExpressRoute",
+      "VPN Gateway"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Azure Blob Storage ist richtig: unstrukturierte Daten speichern.",
+    "tip": "Blob = Bilder/Videos/PDFs",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Storage"
+  },
+  {
+    "id": "q0046",
+    "moduleId": "storage",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Unternehmen möchte Dateifreigaben bereitstellen. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Azure Files",
+      "Azure Cloud Shell",
+      "PaaS",
+      "SaaS"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Azure Files ist richtig: Dateifreigaben bereitstellen.",
+    "tip": "Files = Netzlaufwerk",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Storage"
+  },
+  {
+    "id": "q0047",
+    "moduleId": "storage",
+    "level": 2,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um Dateifreigaben bereitstellen?",
+    "options": [
+      "Entra Connect Sync",
+      "ExpressRoute",
+      "SSO",
+      "Azure Files"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Azure Files ist richtig: Dateifreigaben bereitstellen.",
+    "tip": "Files = Netzlaufwerk",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Storage"
+  },
+  {
+    "id": "q0048",
+    "moduleId": "storage",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: Dateifreigaben bereitstellen. Was empfehlen Sie?",
+    "options": [
+      "Cost Management",
+      "Verfügbarkeitszonen",
+      "Azure Files",
+      "Queue Storage"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Azure Files ist richtig: Dateifreigaben bereitstellen.",
+    "tip": "Files = Netzlaufwerk",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Storage"
+  },
+  {
+    "id": "q0049",
+    "moduleId": "storage",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Unternehmen möchte Nachrichten zwischen Komponenten speichern. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Queue Storage",
+      "Vertikale Skalierung",
+      "Azure Monitor",
+      "Elastizität"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Queue Storage ist richtig: Nachrichten zwischen Komponenten speichern.",
+    "tip": "Queue = Warteschlange",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Storage"
+  },
+  {
+    "id": "q0050",
+    "moduleId": "storage",
+    "level": 2,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um Nachrichten zwischen Komponenten speichern?",
+    "options": [
+      "Ressourcengruppe",
+      "NSG",
+      "Microsoft Entra ID",
+      "Queue Storage"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Queue Storage ist richtig: Nachrichten zwischen Komponenten speichern.",
+    "tip": "Queue = Warteschlange",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Storage"
+  },
+  {
+    "id": "q0051",
+    "moduleId": "storage",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: Nachrichten zwischen Komponenten speichern. Was empfehlen Sie?",
+    "options": [
+      "Queue Storage",
+      "Azure Policy",
+      "Azure Cloud Shell",
+      "Reservations"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Queue Storage ist richtig: Nachrichten zwischen Komponenten speichern.",
+    "tip": "Queue = Warteschlange",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Storage"
+  },
+  {
+    "id": "q0052",
+    "moduleId": "storage",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Unternehmen möchte NoSQL-Key-Value-Daten speichern. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Azure Monitor",
+      "Azure Advisor",
+      "Verwaltungsgruppe",
+      "Table Storage"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Table Storage ist richtig: NoSQL-Key-Value-Daten speichern.",
+    "tip": "Table = NoSQL",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Storage"
+  },
+  {
+    "id": "q0053",
+    "moduleId": "storage",
+    "level": 2,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um NoSQL-Key-Value-Daten speichern?",
+    "options": [
+      "Entra Connect Sync",
+      "Horizontale Skalierung",
+      "Table Storage",
+      "Azure Arc"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Table Storage ist richtig: NoSQL-Key-Value-Daten speichern.",
+    "tip": "Table = NoSQL",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Storage"
+  },
+  {
+    "id": "q0054",
+    "moduleId": "storage",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: NoSQL-Key-Value-Daten speichern. Was empfehlen Sie?",
+    "options": [
+      "Table Storage",
+      "Cost Management",
+      "Entra Connect Sync",
+      "Azure Files"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Table Storage ist richtig: NoSQL-Key-Value-Daten speichern.",
+    "tip": "Table = NoSQL",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Storage"
+  },
+  {
+    "id": "q0055",
+    "moduleId": "network",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Unternehmen möchte verschlüsseltes Site-to-Site VPN herstellen. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Notfallwiederherstellung",
+      "Hochverfügbarkeit",
+      "TCO Calculator",
+      "VPN Gateway"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "VPN Gateway ist richtig: verschlüsseltes Site-to-Site VPN herstellen.",
+    "tip": "VPN = Tunnel",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Netzwerk"
+  },
+  {
+    "id": "q0056",
+    "moduleId": "network",
+    "level": 2,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um verschlüsseltes Site-to-Site VPN herstellen?",
+    "options": [
+      "Azure Service Health",
+      "VPN Gateway",
+      "Azure CLI",
+      "Queue Storage"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "VPN Gateway ist richtig: verschlüsseltes Site-to-Site VPN herstellen.",
+    "tip": "VPN = Tunnel",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Netzwerk"
+  },
+  {
+    "id": "q0057",
+    "moduleId": "network",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: verschlüsseltes Site-to-Site VPN herstellen. Was empfehlen Sie?",
+    "options": [
+      "ExpressRoute",
+      "Cost Management",
+      "ARM Templates",
+      "VPN Gateway"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "VPN Gateway ist richtig: verschlüsseltes Site-to-Site VPN herstellen.",
+    "tip": "VPN = Tunnel",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Netzwerk"
+  },
+  {
+    "id": "q0058",
+    "moduleId": "network",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Unternehmen möchte private Verbindung zu Azure herstellen. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "NSG",
+      "Vertikale Skalierung",
+      "ExpressRoute",
+      "Azure Arc"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "ExpressRoute ist richtig: private Verbindung zu Azure herstellen.",
+    "tip": "ExpressRoute = private Leitung",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Netzwerk"
+  },
+  {
+    "id": "q0059",
+    "moduleId": "network",
+    "level": 2,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um private Verbindung zu Azure herstellen?",
+    "options": [
+      "Vertikale Skalierung",
+      "Azure Resource Manager",
+      "ExpressRoute",
+      "RBAC"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "ExpressRoute ist richtig: private Verbindung zu Azure herstellen.",
+    "tip": "ExpressRoute = private Leitung",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Netzwerk"
+  },
+  {
+    "id": "q0060",
+    "moduleId": "network",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: private Verbindung zu Azure herstellen. Was empfehlen Sie?",
+    "options": [
+      "Tags",
+      "Microsoft Entra ID",
+      "ExpressRoute",
+      "SaaS"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "ExpressRoute ist richtig: private Verbindung zu Azure herstellen.",
+    "tip": "ExpressRoute = private Leitung",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Netzwerk"
+  },
+  {
+    "id": "q0061",
+    "moduleId": "network",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Unternehmen möchte VM-Zugriff ohne öffentliche IP ermöglichen. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Verfügbarkeitszonen",
+      "Elastizität",
+      "Reservations",
+      "Azure Bastion"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Azure Bastion ist richtig: VM-Zugriff ohne öffentliche IP ermöglichen.",
+    "tip": "Bastion = sicherer Zugang",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Netzwerk"
+  },
+  {
+    "id": "q0062",
+    "moduleId": "network",
+    "level": 2,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um VM-Zugriff ohne öffentliche IP ermöglichen?",
+    "options": [
+      "SaaS",
+      "Azure Bastion",
+      "ARM Templates",
+      "Azure Blob Storage"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Azure Bastion ist richtig: VM-Zugriff ohne öffentliche IP ermöglichen.",
+    "tip": "Bastion = sicherer Zugang",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Netzwerk"
+  },
+  {
+    "id": "q0063",
+    "moduleId": "network",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: VM-Zugriff ohne öffentliche IP ermöglichen. Was empfehlen Sie?",
+    "options": [
+      "VPN Gateway",
+      "Vertikale Skalierung",
+      "RBAC",
+      "Azure Bastion"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Azure Bastion ist richtig: VM-Zugriff ohne öffentliche IP ermöglichen.",
+    "tip": "Bastion = sicherer Zugang",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Netzwerk"
+  },
+  {
+    "id": "q0064",
+    "moduleId": "network",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Unternehmen möchte private Netzwerke in Azure erstellen. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Tags",
+      "Notfallwiederherstellung",
+      "TCO Calculator",
+      "VNet"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "VNet ist richtig: private Netzwerke in Azure erstellen.",
+    "tip": "VNet = eigenes Azure-Netz",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Netzwerk"
+  },
+  {
+    "id": "q0065",
+    "moduleId": "network",
+    "level": 2,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um private Netzwerke in Azure erstellen?",
+    "options": [
+      "Abonnement",
+      "Azure Cloud Shell",
+      "VNet",
+      "Conditional Access"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "VNet ist richtig: private Netzwerke in Azure erstellen.",
+    "tip": "VNet = eigenes Azure-Netz",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Netzwerk"
+  },
+  {
+    "id": "q0066",
+    "moduleId": "network",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: private Netzwerke in Azure erstellen. Was empfehlen Sie?",
+    "options": [
+      "VNet",
+      "Cost Management",
+      "IaaS",
+      "Azure Monitor"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "VNet ist richtig: private Netzwerke in Azure erstellen.",
+    "tip": "VNet = eigenes Azure-Netz",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Netzwerk"
+  },
+  {
+    "id": "q0067",
+    "moduleId": "network",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Unternehmen möchte Netzwerkverkehr filtern. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "NSG",
+      "Azure Resource Manager",
+      "Resource Lock",
+      "Conditional Access"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "NSG ist richtig: Netzwerkverkehr filtern.",
+    "tip": "NSG = Firewall-Regeln",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Netzwerk"
+  },
+  {
+    "id": "q0068",
+    "moduleId": "network",
+    "level": 2,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um Netzwerkverkehr filtern?",
+    "options": [
+      "NSG",
+      "IaaS",
+      "ExpressRoute",
+      "Verfügbarkeitszonen"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "NSG ist richtig: Netzwerkverkehr filtern.",
+    "tip": "NSG = Firewall-Regeln",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Netzwerk"
+  },
+  {
+    "id": "q0069",
+    "moduleId": "network",
+    "level": 2,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: Netzwerkverkehr filtern. Was empfehlen Sie?",
+    "options": [
+      "Abonnement",
+      "NSG",
+      "Reservations",
+      "Azure Files"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "NSG ist richtig: Netzwerkverkehr filtern.",
+    "tip": "NSG = Firewall-Regeln",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Netzwerk"
+  },
+  {
+    "id": "q0070",
+    "moduleId": "identity",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Unternehmen möchte Identitäten und Zugriff verwalten. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Table Storage",
+      "Microsoft Entra ID",
+      "VNet",
+      "Azure Resource Manager"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Microsoft Entra ID ist richtig: Identitäten und Zugriff verwalten.",
+    "tip": "Entra = Identität",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Identity & Security"
+  },
+  {
+    "id": "q0071",
+    "moduleId": "identity",
+    "level": 3,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um Identitäten und Zugriff verwalten?",
+    "options": [
+      "Table Storage",
+      "Microsoft Entra ID",
+      "VNet",
+      "Verfügbarkeitszonen"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Microsoft Entra ID ist richtig: Identitäten und Zugriff verwalten.",
+    "tip": "Entra = Identität",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Identity & Security"
+  },
+  {
+    "id": "q0072",
+    "moduleId": "identity",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: Identitäten und Zugriff verwalten. Was empfehlen Sie?",
+    "options": [
+      "VPN Gateway",
+      "Azure Cloud Shell",
+      "Microsoft Entra ID",
+      "Notfallwiederherstellung"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Microsoft Entra ID ist richtig: Identitäten und Zugriff verwalten.",
+    "tip": "Entra = Identität",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Identity & Security"
+  },
+  {
+    "id": "q0073",
+    "moduleId": "identity",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Unternehmen möchte zusätzlichen Anmeldefaktor verlangen. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Entra Connect Sync",
+      "Cost Management",
+      "Azure Files",
+      "MFA"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "MFA ist richtig: zusätzlichen Anmeldefaktor verlangen.",
+    "tip": "MFA = zweiter Faktor",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Identity & Security"
+  },
+  {
+    "id": "q0074",
+    "moduleId": "identity",
+    "level": 3,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um zusätzlichen Anmeldefaktor verlangen?",
+    "options": [
+      "Conditional Access",
+      "NSG",
+      "Shared Responsibility",
+      "MFA"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "MFA ist richtig: zusätzlichen Anmeldefaktor verlangen.",
+    "tip": "MFA = zweiter Faktor",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Identity & Security"
+  },
+  {
+    "id": "q0075",
+    "moduleId": "identity",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: zusätzlichen Anmeldefaktor verlangen. Was empfehlen Sie?",
+    "options": [
+      "MFA",
+      "Hochverfügbarkeit",
+      "Microsoft Entra ID",
+      "IaaS"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "MFA ist richtig: zusätzlichen Anmeldefaktor verlangen.",
+    "tip": "MFA = zweiter Faktor",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Identity & Security"
+  },
+  {
+    "id": "q0076",
+    "moduleId": "identity",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Unternehmen möchte einmal anmelden und mehrere Apps nutzen. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "SSO",
+      "Shared Responsibility",
+      "Verwaltungsgruppe",
+      "Azure Bastion"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "SSO ist richtig: einmal anmelden und mehrere Apps nutzen.",
+    "tip": "SSO = einmal anmelden",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Identity & Security"
+  },
+  {
+    "id": "q0077",
+    "moduleId": "identity",
+    "level": 3,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um einmal anmelden und mehrere Apps nutzen?",
+    "options": [
+      "Microsoft Entra ID",
+      "Azure Blob Storage",
+      "Azure Bastion",
+      "SSO"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "SSO ist richtig: einmal anmelden und mehrere Apps nutzen.",
+    "tip": "SSO = einmal anmelden",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Identity & Security"
+  },
+  {
+    "id": "q0078",
+    "moduleId": "identity",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: einmal anmelden und mehrere Apps nutzen. Was empfehlen Sie?",
+    "options": [
+      "TCO Calculator",
+      "Azure Policy",
+      "SSO",
+      "SaaS"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "SSO ist richtig: einmal anmelden und mehrere Apps nutzen.",
+    "tip": "SSO = einmal anmelden",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Identity & Security"
+  },
+  {
+    "id": "q0079",
+    "moduleId": "identity",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Unternehmen möchte Zugriff abhängig von Bedingungen steuern. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Conditional Access",
+      "Regionspaare",
+      "Azure Arc",
+      "Table Storage"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Conditional Access ist richtig: Zugriff abhängig von Bedingungen steuern.",
+    "tip": "Wenn-Dann-Zugriff",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Identity & Security"
+  },
+  {
+    "id": "q0080",
+    "moduleId": "identity",
+    "level": 3,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um Zugriff abhängig von Bedingungen steuern?",
+    "options": [
+      "Microsoft Entra ID",
+      "Horizontale Skalierung",
+      "Conditional Access",
+      "Abonnement"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Conditional Access ist richtig: Zugriff abhängig von Bedingungen steuern.",
+    "tip": "Wenn-Dann-Zugriff",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Identity & Security"
+  },
+  {
+    "id": "q0081",
+    "moduleId": "identity",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: Zugriff abhängig von Bedingungen steuern. Was empfehlen Sie?",
+    "options": [
+      "MFA",
+      "Conditional Access",
+      "Hochverfügbarkeit",
+      "Azure Files"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Conditional Access ist richtig: Zugriff abhängig von Bedingungen steuern.",
+    "tip": "Wenn-Dann-Zugriff",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Identity & Security"
+  },
+  {
+    "id": "q0082",
+    "moduleId": "identity",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Unternehmen möchte lokales AD mit Entra ID synchronisieren. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Abonnement",
+      "Horizontale Skalierung",
+      "Entra Connect Sync",
+      "Azure Monitor"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Entra Connect Sync ist richtig: lokales AD mit Entra ID synchronisieren.",
+    "tip": "AD ↔ Entra",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Identity & Security"
+  },
+  {
+    "id": "q0083",
+    "moduleId": "identity",
+    "level": 3,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um lokales AD mit Entra ID synchronisieren?",
+    "options": [
+      "Hochverfügbarkeit",
+      "SaaS",
+      "IaaS",
+      "Entra Connect Sync"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Entra Connect Sync ist richtig: lokales AD mit Entra ID synchronisieren.",
+    "tip": "AD ↔ Entra",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Identity & Security"
+  },
+  {
+    "id": "q0084",
+    "moduleId": "identity",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: lokales AD mit Entra ID synchronisieren. Was empfehlen Sie?",
+    "options": [
+      "Entra Connect Sync",
+      "Azure CLI",
+      "Hochverfügbarkeit",
+      "Abonnement"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Entra Connect Sync ist richtig: lokales AD mit Entra ID synchronisieren.",
+    "tip": "AD ↔ Entra",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Identity & Security"
+  },
+  {
+    "id": "q0085",
+    "moduleId": "governance",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Unternehmen möchte Regeln für Ressourcen erzwingen. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Ressourcengruppe",
+      "Shared Responsibility",
+      "TCO Calculator",
+      "Azure Policy"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Azure Policy ist richtig: Regeln für Ressourcen erzwingen.",
+    "tip": "Policy = Regeln",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Governance"
+  },
+  {
+    "id": "q0086",
+    "moduleId": "governance",
+    "level": 3,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um Regeln für Ressourcen erzwingen?",
+    "options": [
+      "VNet",
+      "SaaS",
+      "Azure Policy",
+      "Verfügbarkeitszonen"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Azure Policy ist richtig: Regeln für Ressourcen erzwingen.",
+    "tip": "Policy = Regeln",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Governance"
+  },
+  {
+    "id": "q0087",
+    "moduleId": "governance",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: Regeln für Ressourcen erzwingen. Was empfehlen Sie?",
+    "options": [
+      "Reservations",
+      "MFA",
+      "Azure Cloud Shell",
+      "Azure Policy"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Azure Policy ist richtig: Regeln für Ressourcen erzwingen.",
+    "tip": "Policy = Regeln",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Governance"
+  },
+  {
+    "id": "q0088",
+    "moduleId": "governance",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Unternehmen möchte Berechtigungen vergeben. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Azure Blob Storage",
+      "RBAC",
+      "Azure Preisrechner",
+      "Horizontale Skalierung"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "RBAC ist richtig: Berechtigungen vergeben.",
+    "tip": "RBAC = Rechte",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Governance"
+  },
+  {
+    "id": "q0089",
+    "moduleId": "governance",
+    "level": 3,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um Berechtigungen vergeben?",
+    "options": [
+      "Azure CLI",
+      "RBAC",
+      "ExpressRoute",
+      "Azure Monitor"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "RBAC ist richtig: Berechtigungen vergeben.",
+    "tip": "RBAC = Rechte",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Governance"
+  },
+  {
+    "id": "q0090",
+    "moduleId": "governance",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: Berechtigungen vergeben. Was empfehlen Sie?",
+    "options": [
+      "Azure Bastion",
+      "Table Storage",
+      "Azure Cloud Shell",
+      "RBAC"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "RBAC ist richtig: Berechtigungen vergeben.",
+    "tip": "RBAC = Rechte",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Governance"
+  },
+  {
+    "id": "q0091",
+    "moduleId": "governance",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Unternehmen möchte Löschen/Ändern verhindern. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Azure Preisrechner",
+      "Resource Lock",
+      "Entra Connect Sync",
+      "Table Storage"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Resource Lock ist richtig: Löschen/Ändern verhindern.",
+    "tip": "Lock = Schutz",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Governance"
+  },
+  {
+    "id": "q0092",
+    "moduleId": "governance",
+    "level": 3,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um Löschen/Ändern verhindern?",
+    "options": [
+      "Resource Lock",
+      "TCO Calculator",
+      "Tags",
+      "Queue Storage"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Resource Lock ist richtig: Löschen/Ändern verhindern.",
+    "tip": "Lock = Schutz",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Governance"
+  },
+  {
+    "id": "q0093",
+    "moduleId": "governance",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: Löschen/Ändern verhindern. Was empfehlen Sie?",
+    "options": [
+      "Resource Lock",
+      "VPN Gateway",
+      "Shared Responsibility",
+      "Azure Resource Manager"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Resource Lock ist richtig: Löschen/Ändern verhindern.",
+    "tip": "Lock = Schutz",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Governance"
+  },
+  {
+    "id": "q0094",
+    "moduleId": "governance",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Unternehmen möchte Kosten/Ressourcen kennzeichnen. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Azure Bastion",
+      "Tags",
+      "Verfügbarkeitszonen",
+      "TCO Calculator"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Tags ist richtig: Kosten/Ressourcen kennzeichnen.",
+    "tip": "Tags = Etiketten",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Governance"
+  },
+  {
+    "id": "q0095",
+    "moduleId": "governance",
+    "level": 3,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um Kosten/Ressourcen kennzeichnen?",
+    "options": [
+      "TCO Calculator",
+      "Azure Policy",
+      "ARM Templates",
+      "Tags"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Tags ist richtig: Kosten/Ressourcen kennzeichnen.",
+    "tip": "Tags = Etiketten",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Governance"
+  },
+  {
+    "id": "q0096",
+    "moduleId": "governance",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: Kosten/Ressourcen kennzeichnen. Was empfehlen Sie?",
+    "options": [
+      "Tags",
+      "MFA",
+      "SLA",
+      "Microsoft Entra ID"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Tags ist richtig: Kosten/Ressourcen kennzeichnen.",
+    "tip": "Tags = Etiketten",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Governance"
+  },
+  {
+    "id": "q0097",
+    "moduleId": "governance",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Unternehmen möchte lokale/Multi-Cloud Ressourcen verwalten. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Ressourcengruppe",
+      "Azure Arc",
+      "RBAC",
+      "Azure Bastion"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Azure Arc ist richtig: lokale/Multi-Cloud Ressourcen verwalten.",
+    "tip": "Arc = Azure überall",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Governance"
+  },
+  {
+    "id": "q0098",
+    "moduleId": "governance",
+    "level": 3,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um lokale/Multi-Cloud Ressourcen verwalten?",
+    "options": [
+      "Verfügbarkeitszonen",
+      "Horizontale Skalierung",
+      "Azure Arc",
+      "NSG"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Azure Arc ist richtig: lokale/Multi-Cloud Ressourcen verwalten.",
+    "tip": "Arc = Azure überall",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Governance"
+  },
+  {
+    "id": "q0099",
+    "moduleId": "governance",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: lokale/Multi-Cloud Ressourcen verwalten. Was empfehlen Sie?",
+    "options": [
+      "Cost Management",
+      "Azure Arc",
+      "ARM Templates",
+      "Shared Responsibility"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Azure Arc ist richtig: lokale/Multi-Cloud Ressourcen verwalten.",
+    "tip": "Arc = Azure überall",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Governance"
+  },
+  {
+    "id": "q0100",
+    "moduleId": "management",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Unternehmen möchte Azure-Ressourcen bereitstellen und verwalten. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Abonnement",
+      "Conditional Access",
+      "Azure Resource Manager",
+      "Regionspaare"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Azure Resource Manager ist richtig: Azure-Ressourcen bereitstellen und verwalten.",
+    "tip": "ARM = Ressourcen",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Management & Monitoring"
+  },
+  {
+    "id": "q0101",
+    "moduleId": "management",
+    "level": 3,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um Azure-Ressourcen bereitstellen und verwalten?",
+    "options": [
+      "Elastizität",
+      "Azure Resource Manager",
+      "TCO Calculator",
+      "Azure Policy"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Azure Resource Manager ist richtig: Azure-Ressourcen bereitstellen und verwalten.",
+    "tip": "ARM = Ressourcen",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Management & Monitoring"
+  },
+  {
+    "id": "q0102",
+    "moduleId": "management",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: Azure-Ressourcen bereitstellen und verwalten. Was empfehlen Sie?",
+    "options": [
+      "Azure Files",
+      "Resource Lock",
+      "Azure Preisrechner",
+      "Azure Resource Manager"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Azure Resource Manager ist richtig: Azure-Ressourcen bereitstellen und verwalten.",
+    "tip": "ARM = Ressourcen",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Management & Monitoring"
+  },
+  {
+    "id": "q0103",
+    "moduleId": "management",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Unternehmen möchte wiederholbare Infrastruktur bereitstellen. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Azure Monitor",
+      "Azure Blob Storage",
+      "ARM Templates",
+      "Azure Preisrechner"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "ARM Templates ist richtig: wiederholbare Infrastruktur bereitstellen.",
+    "tip": "Template = Bauplan",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Management & Monitoring"
+  },
+  {
+    "id": "q0104",
+    "moduleId": "management",
+    "level": 3,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um wiederholbare Infrastruktur bereitstellen?",
+    "options": [
+      "ARM Templates",
+      "TCO Calculator",
+      "Tags",
+      "PaaS"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "ARM Templates ist richtig: wiederholbare Infrastruktur bereitstellen.",
+    "tip": "Template = Bauplan",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Management & Monitoring"
+  },
+  {
+    "id": "q0105",
+    "moduleId": "management",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: wiederholbare Infrastruktur bereitstellen. Was empfehlen Sie?",
+    "options": [
+      "Azure Preisrechner",
+      "ARM Templates",
+      "NSG",
+      "Cost Management"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "ARM Templates ist richtig: wiederholbare Infrastruktur bereitstellen.",
+    "tip": "Template = Bauplan",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Management & Monitoring"
+  },
+  {
+    "id": "q0106",
+    "moduleId": "management",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Unternehmen möchte Azure per Bash verwalten. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Azure Advisor",
+      "Cost Management",
+      "Elastizität",
+      "Azure CLI"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Azure CLI ist richtig: Azure per Bash verwalten.",
+    "tip": "Bash = CLI",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Management & Monitoring"
+  },
+  {
+    "id": "q0107",
+    "moduleId": "management",
+    "level": 3,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um Azure per Bash verwalten?",
+    "options": [
+      "Cost Management",
+      "Microsoft Entra ID",
+      "Azure CLI",
+      "Azure Blob Storage"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Azure CLI ist richtig: Azure per Bash verwalten.",
+    "tip": "Bash = CLI",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Management & Monitoring"
+  },
+  {
+    "id": "q0108",
+    "moduleId": "management",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: Azure per Bash verwalten. Was empfehlen Sie?",
+    "options": [
+      "Notfallwiederherstellung",
+      "Azure CLI",
+      "Shared Responsibility",
+      "Azure Resource Manager"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Azure CLI ist richtig: Azure per Bash verwalten.",
+    "tip": "Bash = CLI",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Management & Monitoring"
+  },
+  {
+    "id": "q0109",
+    "moduleId": "management",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Unternehmen möchte Shell im Browser nutzen. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "ExpressRoute",
+      "Azure CLI",
+      "TCO Calculator",
+      "Azure Cloud Shell"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Azure Cloud Shell ist richtig: Shell im Browser nutzen.",
+    "tip": "Cloud Shell = Browser",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Management & Monitoring"
+  },
+  {
+    "id": "q0110",
+    "moduleId": "management",
+    "level": 3,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um Shell im Browser nutzen?",
+    "options": [
+      "Vertikale Skalierung",
+      "Microsoft Entra ID",
+      "Azure Cloud Shell",
+      "Queue Storage"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Azure Cloud Shell ist richtig: Shell im Browser nutzen.",
+    "tip": "Cloud Shell = Browser",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Management & Monitoring"
+  },
+  {
+    "id": "q0111",
+    "moduleId": "management",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: Shell im Browser nutzen. Was empfehlen Sie?",
+    "options": [
+      "Azure Cloud Shell",
+      "Azure CLI",
+      "ExpressRoute",
+      "Azure Monitor"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Azure Cloud Shell ist richtig: Shell im Browser nutzen.",
+    "tip": "Cloud Shell = Browser",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Management & Monitoring"
+  },
+  {
+    "id": "q0112",
+    "moduleId": "management",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Unternehmen möchte Metriken und Logs sammeln. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "PaaS",
+      "Shared Responsibility",
+      "Vertikale Skalierung",
+      "Azure Monitor"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Azure Monitor ist richtig: Metriken und Logs sammeln.",
+    "tip": "Monitor = Messwerte",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Management & Monitoring"
+  },
+  {
+    "id": "q0113",
+    "moduleId": "management",
+    "level": 3,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um Metriken und Logs sammeln?",
+    "options": [
+      "Azure Files",
+      "Table Storage",
+      "Conditional Access",
+      "Azure Monitor"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Azure Monitor ist richtig: Metriken und Logs sammeln.",
+    "tip": "Monitor = Messwerte",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Management & Monitoring"
+  },
+  {
+    "id": "q0114",
+    "moduleId": "management",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: Metriken und Logs sammeln. Was empfehlen Sie?",
+    "options": [
+      "Azure Monitor",
+      "Entra Connect Sync",
+      "Shared Responsibility",
+      "Vertikale Skalierung"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Azure Monitor ist richtig: Metriken und Logs sammeln.",
+    "tip": "Monitor = Messwerte",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Management & Monitoring"
+  },
+  {
+    "id": "q0115",
+    "moduleId": "management",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Unternehmen möchte Optimierungsempfehlungen erhalten. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Elastizität",
+      "Azure Resource Manager",
+      "Azure Advisor",
+      "Verwaltungsgruppe"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Azure Advisor ist richtig: Optimierungsempfehlungen erhalten.",
+    "tip": "Advisor = Berater",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Management & Monitoring"
+  },
+  {
+    "id": "q0116",
+    "moduleId": "management",
+    "level": 3,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um Optimierungsempfehlungen erhalten?",
+    "options": [
+      "Azure Advisor",
+      "Shared Responsibility",
+      "IaaS",
+      "Elastizität"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Azure Advisor ist richtig: Optimierungsempfehlungen erhalten.",
+    "tip": "Advisor = Berater",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Management & Monitoring"
+  },
+  {
+    "id": "q0117",
+    "moduleId": "management",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: Optimierungsempfehlungen erhalten. Was empfehlen Sie?",
+    "options": [
+      "Entra Connect Sync",
+      "Azure Advisor",
+      "Azure Files",
+      "Conditional Access"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Azure Advisor ist richtig: Optimierungsempfehlungen erhalten.",
+    "tip": "Advisor = Berater",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Management & Monitoring"
+  },
+  {
+    "id": "q0118",
+    "moduleId": "management",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Unternehmen möchte Azure-Ausfälle und Wartungen melden. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Verfügbarkeitszonen",
+      "Azure Service Health",
+      "Queue Storage",
+      "Verwaltungsgruppe"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Azure Service Health ist richtig: Azure-Ausfälle und Wartungen melden.",
+    "tip": "Azure kaputt = Service Health",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Management & Monitoring"
+  },
+  {
+    "id": "q0119",
+    "moduleId": "management",
+    "level": 3,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um Azure-Ausfälle und Wartungen melden?",
+    "options": [
+      "Azure Service Health",
+      "Elastizität",
+      "Hochverfügbarkeit",
+      "Vertikale Skalierung"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Azure Service Health ist richtig: Azure-Ausfälle und Wartungen melden.",
+    "tip": "Azure kaputt = Service Health",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Management & Monitoring"
+  },
+  {
+    "id": "q0120",
+    "moduleId": "management",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: Azure-Ausfälle und Wartungen melden. Was empfehlen Sie?",
+    "options": [
+      "SLA",
+      "Azure Service Health",
+      "Notfallwiederherstellung",
+      "Table Storage"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Azure Service Health ist richtig: Azure-Ausfälle und Wartungen melden.",
+    "tip": "Azure kaputt = Service Health",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Management & Monitoring"
+  },
+  {
+    "id": "q0121",
+    "moduleId": "costs",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Unternehmen möchte Kosten vor Bereitstellung schätzen. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "SLA",
+      "Horizontale Skalierung",
+      "Azure Resource Manager",
+      "Azure Preisrechner"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Azure Preisrechner ist richtig: Kosten vor Bereitstellung schätzen.",
+    "tip": "Vorher = Preisrechner",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Kosten & SLA"
+  },
+  {
+    "id": "q0122",
+    "moduleId": "costs",
+    "level": 3,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um Kosten vor Bereitstellung schätzen?",
+    "options": [
+      "Reservations",
+      "Azure Preisrechner",
+      "Hochverfügbarkeit",
+      "Azure Policy"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Azure Preisrechner ist richtig: Kosten vor Bereitstellung schätzen.",
+    "tip": "Vorher = Preisrechner",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Kosten & SLA"
+  },
+  {
+    "id": "q0123",
+    "moduleId": "costs",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: Kosten vor Bereitstellung schätzen. Was empfehlen Sie?",
+    "options": [
+      "VNet",
+      "Elastizität",
+      "Azure Advisor",
+      "Azure Preisrechner"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Azure Preisrechner ist richtig: Kosten vor Bereitstellung schätzen.",
+    "tip": "Vorher = Preisrechner",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Kosten & SLA"
+  },
+  {
+    "id": "q0124",
+    "moduleId": "costs",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Unternehmen möchte laufende Kosten analysieren. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "SSO",
+      "Azure Preisrechner",
+      "Cost Management",
+      "SaaS"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Cost Management ist richtig: laufende Kosten analysieren.",
+    "tip": "Nachher = Kostenkontrolle",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Kosten & SLA"
+  },
+  {
+    "id": "q0125",
+    "moduleId": "costs",
+    "level": 3,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um laufende Kosten analysieren?",
+    "options": [
+      "Vertikale Skalierung",
+      "Verwaltungsgruppe",
+      "Azure Service Health",
+      "Cost Management"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Cost Management ist richtig: laufende Kosten analysieren.",
+    "tip": "Nachher = Kostenkontrolle",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Kosten & SLA"
+  },
+  {
+    "id": "q0126",
+    "moduleId": "costs",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: laufende Kosten analysieren. Was empfehlen Sie?",
+    "options": [
+      "SLA",
+      "Abonnement",
+      "VNet",
+      "Cost Management"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Cost Management ist richtig: laufende Kosten analysieren.",
+    "tip": "Nachher = Kostenkontrolle",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Kosten & SLA"
+  },
+  {
+    "id": "q0127",
+    "moduleId": "costs",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Unternehmen möchte Kosten durch Nutzungszusage senken. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Reservations",
+      "Azure Monitor",
+      "Shared Responsibility",
+      "Tags"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Reservations ist richtig: Kosten durch Nutzungszusage senken.",
+    "tip": "Commitment spart",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Kosten & SLA"
+  },
+  {
+    "id": "q0128",
+    "moduleId": "costs",
+    "level": 3,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um Kosten durch Nutzungszusage senken?",
+    "options": [
+      "Reservations",
+      "Azure Arc",
+      "Hochverfügbarkeit",
+      "Azure Files"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Reservations ist richtig: Kosten durch Nutzungszusage senken.",
+    "tip": "Commitment spart",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Kosten & SLA"
+  },
+  {
+    "id": "q0129",
+    "moduleId": "costs",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: Kosten durch Nutzungszusage senken. Was empfehlen Sie?",
+    "options": [
+      "Azure Policy",
+      "VPN Gateway",
+      "SaaS",
+      "Reservations"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Reservations ist richtig: Kosten durch Nutzungszusage senken.",
+    "tip": "Commitment spart",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Kosten & SLA"
+  },
+  {
+    "id": "q0130",
+    "moduleId": "costs",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Unternehmen möchte Verfügbarkeitszusage beschreiben. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "SLA",
+      "Entra Connect Sync",
+      "ExpressRoute",
+      "Ressourcengruppe"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "SLA ist richtig: Verfügbarkeitszusage beschreiben.",
+    "tip": "SLA = Versprechen",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Kosten & SLA"
+  },
+  {
+    "id": "q0131",
+    "moduleId": "costs",
+    "level": 3,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um Verfügbarkeitszusage beschreiben?",
+    "options": [
+      "Azure Files",
+      "Azure Advisor",
+      "Conditional Access",
+      "SLA"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "SLA ist richtig: Verfügbarkeitszusage beschreiben.",
+    "tip": "SLA = Versprechen",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Kosten & SLA"
+  },
+  {
+    "id": "q0132",
+    "moduleId": "costs",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: Verfügbarkeitszusage beschreiben. Was empfehlen Sie?",
+    "options": [
+      "Azure Arc",
+      "Azure Bastion",
+      "SLA",
+      "VPN Gateway"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "SLA ist richtig: Verfügbarkeitszusage beschreiben.",
+    "tip": "SLA = Versprechen",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Kosten & SLA"
+  },
+  {
+    "id": "q0133",
+    "moduleId": "costs",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Unternehmen möchte Cloudmigration wirtschaftlich vergleichen. Welche Azure-Funktion passt am besten?",
+    "options": [
+      "Cost Management",
+      "VPN Gateway",
+      "TCO Calculator",
+      "Elastizität"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "TCO Calculator ist richtig: Cloudmigration wirtschaftlich vergleichen.",
+    "tip": "TCO = Gesamtvergleich",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Kosten & SLA"
+  },
+  {
+    "id": "q0134",
+    "moduleId": "costs",
+    "level": 3,
+    "type": "single",
+    "question": "Welche Lösung verwenden Sie, um Cloudmigration wirtschaftlich vergleichen?",
+    "options": [
+      "Table Storage",
+      "Azure Service Health",
+      "TCO Calculator",
+      "ARM Templates"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "TCO Calculator ist richtig: Cloudmigration wirtschaftlich vergleichen.",
+    "tip": "TCO = Gesamtvergleich",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Kosten & SLA"
+  },
+  {
+    "id": "q0135",
+    "moduleId": "costs",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Kunde benötigt eine Lösung für folgendes Ziel: Cloudmigration wirtschaftlich vergleichen. Was empfehlen Sie?",
+    "options": [
+      "Azure Policy",
+      "SLA",
+      "TCO Calculator",
+      "Azure Cloud Shell"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "TCO Calculator ist richtig: Cloudmigration wirtschaftlich vergleichen.",
+    "tip": "TCO = Gesamtvergleich",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Kosten & SLA"
+  },
+  {
+    "id": "q0136",
+    "moduleId": "governance",
+    "level": 3,
+    "type": "multi",
+    "question": "Welche zwei Funktionen gehören zu Governance und Zugriff?",
+    "options": [
+      "Azure Policy",
+      "RBAC",
+      "Azure Blob Storage",
+      "Azure Bastion"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Azure Policy erzwingt Regeln; RBAC vergibt Berechtigungen.",
+    "tip": "Policy = Regeln, RBAC = Rechte",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Governance"
+  },
+  {
+    "id": "q0137",
+    "moduleId": "governance",
+    "level": 3,
+    "type": "multi",
+    "question": "Welche zwei Funktionen helfen bei Organisation und Schutz?",
+    "options": [
+      "Tags",
+      "Resource Lock",
+      "Azure Queue Storage",
+      "Azure Functions"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Tags organisieren; Locks schützen vor Löschen/Ändern.",
+    "tip": "Tags sortieren, Locks schützen",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Governance"
+  },
+  {
+    "id": "q0138",
+    "moduleId": "network",
+    "level": 2,
+    "type": "multi",
+    "question": "Welche zwei Dienste verbinden lokale Netzwerke mit Azure?",
+    "options": [
+      "VPN Gateway",
+      "ExpressRoute",
+      "Azure Files",
+      "MFA"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "VPN Gateway und ExpressRoute verbinden On-Premises mit Azure.",
+    "tip": "VPN/ExpressRoute = Verbindung",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Netzwerk"
+  },
+  {
+    "id": "q0139",
+    "moduleId": "storage",
+    "level": 2,
+    "type": "multi",
+    "question": "Welche zwei Dienste speichern Dateien/Objekte?",
+    "options": [
+      "Azure Files",
+      "Azure Blob Storage",
+      "RBAC",
+      "Azure Advisor"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Files ist Dateifreigabe; Blob ist Objektstorage.",
+    "tip": "Files = Share, Blob = Objekt",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Storage"
+  },
+  {
+    "id": "q0140",
+    "moduleId": "cloud",
+    "level": 1,
+    "type": "multi",
+    "question": "Welche zwei Aussagen zur Skalierung sind korrekt?",
+    "options": [
+      "Horizontal bedeutet mehr Instanzen.",
+      "Vertikal bedeutet größere Instanz.",
+      "Horizontal bedeutet größere Instanz.",
+      "Vertikal bedeutet mehr Regionen."
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Horizontal = Scale out; vertikal = Scale up.",
+    "tip": "Mehr vs. größer",
+    "source": "Microsoft Learn AZ-900 Modul: V1 Cloud Concepts"
+  },
+  {
+    "id": "q0141",
+    "moduleId": "management",
+    "level": 3,
+    "type": "single",
+    "question": "Service Health vs Monitor: Welche Aussage ist korrekt?",
+    "options": [
+      "Service Health meldet Azure-Dienstprobleme; Monitor überwacht deine Ressourcen.",
+      "Monitor meldet nur globale Azure-Ausfälle.",
+      "Service Health speichert VM-CPU-Logs.",
+      "Advisor ist dasselbe wie Service Health."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Service Health betrifft Azure-Plattformereignisse; Monitor Telemetrie deiner Ressourcen.",
+    "tip": "Azure kaputt = Service Health; deine App = Monitor",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Management & Monitoring"
+  },
+  {
+    "id": "q0142",
+    "moduleId": "costs",
+    "level": 3,
+    "type": "single",
+    "question": "Pricing Calculator vs Cost Management: Welche Aussage ist korrekt?",
+    "options": [
+      "Preisrechner vor Bereitstellung; Cost Management für laufende Kosten.",
+      "Cost Management erstellt neue VMs.",
+      "Preisrechner meldet Ausfälle.",
+      "Service Health berechnet TCO."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Pricing Calculator schätzt; Cost Management analysiert laufende Kosten.",
+    "tip": "Vorher rechnen, nachher steuern",
+    "source": "Microsoft Learn AZ-900 Modul: Endgame Kosten & SLA"
+  },
+  {
+    "id": "q0143",
+    "moduleId": "governance",
+    "level": 3,
+    "type": "single",
+    "question": "Ein Team darf VMs erstellen, aber nur bestimmte Größen. Welche Kombination ist korrekt?",
+    "options": [
+      "RBAC gibt das Recht zum Erstellen; Azure Policy begrenzt Größen.",
+      "Resource Locks begrenzen die Größen.",
+      "Tags blockieren VM-Größen.",
+      "Azure Monitor verhindert falsche Größen."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "RBAC vergibt Rechte; Policy erzwingt Regeln.",
+    "tip": "Rechte ≠ Regeln",
+    "source": "Microsoft Learn AZ-900 Modul: V3 Governance"
+  },
+  {
+    "id": "q0144",
+    "moduleId": "arch",
+    "level": 2,
+    "type": "single",
+    "question": "Unterschied zwischen Zone und Regionspaar?",
+    "options": [
+      "Zone liegt innerhalb einer Region; Regionspaar besteht aus zwei Regionen.",
+      "Beides sind Ressourcengruppen.",
+      "Regionspaare sind einzelne Rechenzentren.",
+      "Zonen dienen der Abrechnung."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Zonen sind innerhalb einer Region; Regionspaare koppeln zwei Regionen.",
+    "tip": "Zone innen, Pair außen",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Architektur"
+  },
+  {
+    "id": "q0145",
+    "moduleId": "storage",
+    "level": 2,
+    "type": "single",
+    "question": "Welche Option beschreibt Azure Files statt Blob Storage?",
+    "options": [
+      "Dateifreigabe als virtuelles Laufwerk für mehrere VMs",
+      "Bilder direkt an Browser bereitstellen",
+      "Backups als Objektdateien speichern",
+      "Unstrukturierte Daten speichern"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "SMB-Dateifreigaben sind Azure Files; Bilder/Backups eher Blob.",
+    "tip": "Netzlaufwerk = Files",
+    "source": "Microsoft Learn AZ-900 Modul: V2 Storage"
+  }
+]
