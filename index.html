@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AZ-900 Academy</title>
+<style>
+:root{--bg:#f5f7fb;--card:#fff;--text:#172033;--muted:#64748b;--pri:#0078d4;--ok:#107c10;--bad:#d13438;--line:#dbe3ef;}
+.dark{--bg:#0b1220;--card:#111b2e;--text:#eef4ff;--muted:#9fb0c7;--pri:#4da3ff;--line:#28364f;}
+*{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text)}
+.wrap{max-width:1100px;margin:0 auto;padding:24px} .top{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:18px}
+h1{margin:0;font-size:34px} h2{margin:0 0 12px} .muted{color:var(--muted)} .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:0 8px 30px rgba(0,0,0,.06)}
+button{border:0;border-radius:13px;padding:12px 16px;font-weight:800;cursor:pointer;background:var(--pri);color:white} button.secondary{background:transparent;color:var(--text);border:1px solid var(--line)} button.ghost{background:rgba(0,120,212,.1);color:var(--pri)}
+.pill{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);padding:8px 11px;border-radius:999px;color:var(--muted);font-weight:700;margin:3px}
+.bar{height:12px;background:rgba(100,116,139,.2);border-radius:99px;overflow:hidden} .fill{height:100%;background:var(--pri);width:0%;transition:.25s}
+.q{font-size:23px;line-height:1.42;margin:16px 0} .opts{display:grid;gap:10px} label{border:1px solid var(--line);border-radius:15px;padding:14px;display:flex;gap:12px;cursor:pointer;background:rgba(255,255,255,.02)} label:hover{border-color:var(--pri)} input{transform:scale(1.15)}
+.feedback{display:none;margin-top:16px;border-radius:16px;padding:16px;line-height:1.5} .right{background:rgba(16,124,16,.12);border:1px solid rgba(16,124,16,.5)} .wrong{background:rgba(209,52,56,.12);border:1px solid rgba(209,52,56,.5)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0} .hidden{display:none!important} .topic{display:flex;justify-content:space-between;align-items:center;margin:10px 0;gap:12px} .small{font-size:13px} .review{display:grid;gap:10px;margin-top:16px} .reviewItem{border:1px solid var(--line);border-radius:14px;padding:12px} 
+@media(max-width:800px){.grid{grid-template-columns:1fr}.top{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="wrap">
+ <div class="top">
+  <div><h1>AZ-900 Academy</h1><div class="muted">Persönliche Lernplattform für deine AZ-900-Vorbereitung</div></div>
+  <button class="secondary" onclick="toggleDark()">🌙 Dark Mode</button>
+ </div>
+
+ <section id="dashboard">
+  <div class="grid">
+   <div class="card"><h2>Fortschritt</h2><div class="bar"><div class="fill" id="overall"></div></div><p id="overallText" class="muted"></p></div>
+   <div class="card"><h2>XP & Streak</h2><div><span class="pill" id="xp">⭐ XP 0</span><span class="pill" id="streak">🔥 Streak 0</span></div><p class="muted">XP gibt es für richtige Antworten.</p></div>
+   <div class="card"><h2>Modus</h2><button onclick="startLearn()">Lernmodus starten</button> <button class="ghost" onclick="startWeak()">Schwächenmodus</button></div>
+  </div>
+
+  <div class="card" style="margin-top:14px">
+   <h2>Themen</h2><div id="topics"></div>
+  </div>
+
+  <div class="card" style="margin-top:14px">
+   <h2>Prüfungsmodus</h2>
+   <p class="muted">20 zufällige Fragen, keine direkte Lösung bis zum Ende.</p>
+   <button onclick="startExam()">Prüfung starten</button>
+   <button class="secondary" onclick="resetProgress()">Fortschritt zurücksetzen</button>
+  </div>
+ </section>
+
+ <section id="quiz" class="hidden card">
+  <div><span class="pill" id="modePill"></span><span class="pill" id="numPill"></span><span class="pill" id="catPill"></span></div>
+  <div class="bar" style="margin:14px 0"><div class="fill" id="quizbar"></div></div>
+  <div class="small muted" id="type"></div>
+  <div class="q" id="question"></div>
+  <div class="opts" id="options"></div>
+  <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap">
+   <button onclick="check()">Antwort prüfen</button>
+   <button class="secondary" id="next" onclick="next()" disabled>Nächste</button>
+   <button class="secondary" onclick="home()">Dashboard</button>
+  </div>
+  <div id="feedback" class="feedback"></div>
+ </section>
+
+ <section id="result" class="hidden card">
+  <h2>Auswertung</h2>
+  <div id="score" style="font-size:42px;font-weight:900;color:var(--pri)"></div>
+  <p id="resultText" class="muted"></p>
+  <button onclick="home()">Zum Dashboard</button>
+  <button class="ghost" onclick="startWeak()">Falsche/Schwächen üben</button>
+  <div id="review" class="review"></div>
+ </section>
+</div>
+
+<script>
+const QUESTIONS = [{"cat": "Governance", "type": "single", "q": "Ein Unternehmen möchte verhindern, dass VMs mit mehr als 4 vCPUs erstellt werden. Welche Azure-Funktion nutzt du?", "options": ["Resource Lock", "Azure Policy", "RBAC", "Azure Monitor"], "answer": [1], "why": "Azure Policy erzwingt Regeln für Ressourcen, z. B. erlaubte VM-Größen.", "wrong": ["Lock schützt vor Löschen/Ändern.", "RBAC regelt Berechtigungen.", "Monitor überwacht Leistung und Logs."], "tip": "Policy = Regeln."}, {"cat": "Governance", "type": "single", "q": "Ein Benutzer soll eine Ressourcengruppe verwalten dürfen, aber keine anderen Ressourcen außerhalb davon. Was nutzt du?", "options": ["Azure Policy", "RBAC", "Tags", "Service Health"], "answer": [1], "why": "RBAC weist Rollen auf einem bestimmten Scope zu, z. B. Ressourcengruppe.", "wrong": ["Policy erzwingt Regeln.", "Tags organisieren Kosten/Ressourcen.", "Service Health meldet Ausfälle."], "tip": "RBAC = Wer darf was wo?"}, {"cat": "Governance", "type": "multi", "q": "Du möchtest versehentliches Löschen verhindern und Kostenstellen auswerten. Welche zwei Funktionen passen?", "options": ["Tags", "Resource Lock", "Azure Advisor", "Azure Monitor"], "answer": [0, 1], "why": "Tags helfen bei Kostenstellen; Resource Locks schützen vor Löschen/Ändern.", "wrong": ["Advisor gibt Empfehlungen.", "Monitor sammelt Metriken/Logs."], "tip": "Tags = Etiketten, Lock = Schutz."}, {"cat": "Governance", "type": "single", "q": "Welche Funktion kann erzwingen, dass Ressourcen nur in 'West Europe' erstellt werden?", "options": ["RBAC", "Azure Policy", "Resource Lock", "Azure Advisor"], "answer": [1], "why": "Azure Policy kann erlaubte Regionen erzwingen.", "wrong": ["RBAC gibt Rechte.", "Lock schützt bestehende Ressourcen.", "Advisor empfiehlt Optimierungen."], "tip": "Region erlauben/verbieten = Policy."}, {"cat": "Governance", "type": "single", "q": "Ein Entwickler darf Ressourcen sehen, aber nicht ändern. Welche Lösung?", "options": ["RBAC Rolle 'Reader'", "Azure Policy", "Delete Lock", "Tags"], "answer": [0], "why": "Mit RBAC kann man Leserechte vergeben.", "wrong": ["Policy regelt Ressourcenerstellung.", "Delete Lock verhindert Löschen, nicht Rechte.", "Tags sind nur Metadaten."], "tip": "Anzeigen/Ändern/Löschen-Rechte = RBAC."}, {"cat": "Governance", "type": "single", "q": "Welche Funktion verhindert speziell das versehentliche Löschen einer VM?", "options": ["Azure Monitor", "Resource Lock", "Azure Policy", "Microsoft Entra ID"], "answer": [1], "why": "Ein Delete Lock verhindert das Löschen der Ressource.", "wrong": ["Monitor überwacht.", "Policy erzwingt Regeln, schützt aber nicht primär vor versehentlichem Löschen.", "Entra ID verwaltet Identitäten."], "tip": "Lock = Finger weg."}, {"cat": "Architektur", "type": "single", "q": "Mehrere physisch getrennte Rechenzentren innerhalb EINER Azure-Region heißen ...", "options": ["Regionspaare", "Verfügbarkeitszonen", "Ressourcengruppen", "Management Groups"], "answer": [1], "why": "Availability Zones sind getrennte Rechenzentren innerhalb einer Region.", "wrong": ["Regionspaare sind zwei Regionen.", "Ressourcengruppen organisieren Ressourcen.", "Management Groups organisieren Abonnements."], "tip": "Zone = innerhalb der Region."}, {"cat": "Architektur", "type": "single", "q": "Zwei Azure-Regionen, die für Notfallwiederherstellung gekoppelt sind, heißen ...", "options": ["Availability Sets", "Verfügbarkeitszonen", "Regionspaare", "VNets"], "answer": [2], "why": "Regionspaare helfen bei Disaster Recovery über zwei Regionen hinweg.", "wrong": ["Availability Sets verteilen VMs innerhalb eines Rechenzentrums.", "Zonen sind innerhalb einer Region.", "VNets sind Netzwerke."], "tip": "Pair = zwei Regionen."}, {"cat": "Architektur", "type": "single", "q": "Du möchtest viele Bilder, Videos und PDFs speichern. Welcher Storage passt am besten?", "options": ["Azure Files", "Azure Blob Storage", "Azure Queue Storage", "Azure Table Storage"], "answer": [1], "why": "Blob Storage ist für unstrukturierte Daten wie Bilder, Videos, PDFs und Backups.", "wrong": ["Azure Files ist SMB-Dateifreigabe.", "Queue ist Nachrichtenwarteschlange.", "Table ist NoSQL-Key-Value."], "tip": "Blob = große Dateiobjekte."}, {"cat": "Architektur", "type": "single", "q": "Du brauchst eine klassische SMB-Dateifreigabe wie ein Netzlaufwerk. Was nutzt du?", "options": ["Azure Blob Storage", "Azure Files", "Azure SQL Database", "Azure Queue Storage"], "answer": [1], "why": "Azure Files stellt Dateifreigaben über SMB/NFS bereit.", "wrong": ["Blob ist Objektstorage.", "SQL ist Datenbank.", "Queue ist für Nachrichten."], "tip": "Files = Netzlaufwerk."}, {"cat": "Architektur", "type": "single", "q": "Azure SQL Database ist welches Cloud-Modell?", "options": ["IaaS", "PaaS", "SaaS", "On-Premises"], "answer": [1], "why": "Azure SQL Database ist ein verwalteter Datenbankdienst, also PaaS.", "wrong": ["IaaS wäre z. B. SQL Server auf einer VM.", "SaaS ist fertige Software wie Microsoft 365.", "On-Premises ist lokal."], "tip": "Verwaltete Plattform = PaaS."}, {"cat": "Architektur", "type": "single", "q": "Azure Virtual Machines sind welches Cloud-Modell?", "options": ["IaaS", "PaaS", "SaaS", "Serverless-only"], "answer": [0], "why": "VMs geben dir Kontrolle über Betriebssystem und Server, typisch IaaS.", "wrong": ["PaaS verwaltet OS/Plattform stärker.", "SaaS ist fertige Software.", "Serverless ist z. B. Functions."], "tip": "VM = IaaS."}, {"cat": "Cloud Concepts", "type": "single", "q": "Du fügst mehrere VMs hinzu, um mehr Last zu tragen. Das ist ...", "options": ["Vertikale Skalierung", "Horizontale Skalierung", "Disaster Recovery", "CapEx"], "answer": [1], "why": "Mehr Instanzen hinzufügen = horizontale Skalierung / Scale out.", "wrong": ["Vertikal wäre eine größere VM.", "Disaster Recovery ist Wiederherstellung nach Ausfall.", "CapEx sind Investitionskosten."], "tip": "Horizontal = mehr Geräte."}, {"cat": "Cloud Concepts", "type": "single", "q": "Du wechselst von einer kleinen VM auf eine größere VM mit mehr CPU/RAM. Das ist ...", "options": ["Horizontale Skalierung", "Vertikale Skalierung", "Elastizität", "Regionspaar"], "answer": [1], "why": "Eine einzelne Ressource größer machen = vertikale Skalierung / Scale up.", "wrong": ["Horizontal wäre mehr Instanzen.", "Elastizität ist automatisches Skalieren nach Bedarf.", "Regionspaar betrifft DR."], "tip": "Vertikal = größerer Server."}, {"cat": "Cloud Concepts", "type": "single", "q": "Ein Dienst skaliert automatisch hoch und runter, je nach Auslastung. Welcher Cloudvorteil ist das?", "options": ["Elastizität", "Vorhersagbarkeit", "Governance", "Mandantenfähigkeit"], "answer": [0], "why": "Elastizität bedeutet dynamisches Anpassen an Nachfrage.", "wrong": ["Vorhersagbarkeit meint planbare Leistung/Kosten.", "Governance sind Regeln/Kontrolle.", "Mandantenfähigkeit betrifft mehrere Kunden auf gemeinsamer Plattform."], "tip": "Elastisch = Gummiband."}, {"cat": "Cloud Concepts", "type": "single", "q": "Bei welchem Modell verwaltet der Kunde hauptsächlich Daten und Zugriffe, aber nicht Server, OS oder Apps?", "options": ["IaaS", "PaaS", "SaaS", "On-Premises"], "answer": [2], "why": "Bei SaaS nutzt du fertige Software; du verwaltest vor allem Daten und Benutzer/Zugriffe.", "wrong": ["IaaS: OS und Apps selbst.", "PaaS: Apps und Daten.", "On-Premises: alles selbst."], "tip": "SaaS = fertige App abonnieren."}, {"cat": "Identity", "type": "single", "q": "Lokale Active-Directory-Benutzer sollen mit Microsoft Entra ID synchronisiert werden. Was nutzt du?", "options": ["Microsoft Entra Connect Sync", "Azure Arc", "Azure Policy", "Azure DNS"], "answer": [0], "why": "Entra Connect Sync synchronisiert lokale AD-Identitäten mit Entra ID.", "wrong": ["Arc verwaltet hybride Ressourcen.", "Policy erzwingt Regeln.", "DNS verwaltet Namensauflösung."], "tip": "AD ↔ Entra = Connect Sync."}, {"cat": "Identity", "type": "single", "q": "Du brauchst verwaltete Domänendienste ohne eigene Domain Controller in Azure. Was nutzt du?", "options": ["Azure App Service", "Microsoft Entra Domain Services", "Azure Bastion", "Azure Monitor"], "answer": [1], "why": "Microsoft Entra Domain Services stellt verwaltete AD DS-Funktionen bereit.", "wrong": ["App Service hostet Webapps.", "Bastion bietet sicheren VM-Zugriff.", "Monitor überwacht."], "tip": "Domain Services = Managed AD."}, {"cat": "Identity", "type": "single", "q": "Benutzer müssen neben Passwort zusätzlich per App bestätigen. Was ist das?", "options": ["SSO", "MFA", "RBAC", "Conditional Access"], "answer": [1], "why": "MFA verlangt mindestens einen weiteren Faktor neben dem Passwort.", "wrong": ["SSO ist einmaliges Anmelden.", "RBAC sind Rollen/Rechte.", "Conditional Access kann MFA auslösen, ist aber nicht die Methode selbst."], "tip": "MFA = Passwort + zweiter Faktor."}, {"cat": "Identity", "type": "single", "q": "Zugriff auf eine App soll nur erlaubt sein, wenn das Gerät compliant ist. Welche Funktion?", "options": ["Conditional Access", "Resource Lock", "Azure Advisor", "Tags"], "answer": [0], "why": "Conditional Access entscheidet anhand Bedingungen wie Gerät, Standort, Risiko oder MFA.", "wrong": ["Lock schützt Ressourcen.", "Advisor empfiehlt.", "Tags markieren Ressourcen."], "tip": "Conditional Access = Wenn-Dann-Zugriff."}, {"cat": "Management", "type": "single", "q": "Du möchtest lokale Server und Server in anderen Clouds zentral über Azure verwalten. Was nutzt du?", "options": ["Azure Arc", "Azure Advisor", "Azure Monitor", "Azure Files"], "answer": [0], "why": "Azure Arc erweitert Azure-Management auf On-Premises und Multi-Cloud.", "wrong": ["Advisor empfiehlt Optimierungen.", "Monitor überwacht.", "Files ist Storage."], "tip": "Arc = Azure-Klammer um alles."}, {"cat": "Management", "type": "single", "q": "Du willst Empfehlungen zu Kosten, Sicherheit, Leistung und Zuverlässigkeit bekommen. Welcher Dienst?", "options": ["Azure Service Health", "Azure Advisor", "Azure Monitor", "Azure Policy"], "answer": [1], "why": "Azure Advisor ist der persönliche Cloud-Berater mit Optimierungsempfehlungen.", "wrong": ["Service Health meldet Dienstprobleme.", "Monitor sammelt Daten.", "Policy erzwingt Regeln."], "tip": "Advisor = Berater."}, {"cat": "Management", "type": "single", "q": "Du willst wissen, ob ein Azure-Ausfall deine Region oder deinen Dienst betrifft. Was nutzt du?", "options": ["Azure Monitor", "Azure Service Health", "Azure Advisor", "Cost Management"], "answer": [1], "why": "Service Health informiert über Azure-Ausfälle, Wartungen und Health Advisories.", "wrong": ["Monitor ist für deine Ressourcenmetriken/Logs.", "Advisor empfiehlt.", "Cost Management analysiert Kosten."], "tip": "Service kaputt? Service Health."}, {"cat": "Management", "type": "single", "q": "Du möchtest Metriken, Logs und Warnungen für deine Ressourcen sammeln und analysieren. Was nutzt du?", "options": ["Azure Monitor", "Azure Service Health", "Azure Pricing Calculator", "Azure Policy"], "answer": [0], "why": "Azure Monitor sammelt und analysiert Metriken/Logs deiner Ressourcen.", "wrong": ["Service Health = Azure-Dienststatus.", "Pricing Calculator = Kosten vorab schätzen.", "Policy = Regeln."], "tip": "Monitor = Messwerte und Logs."}, {"cat": "Kosten", "type": "multi", "q": "Welche zwei Faktoren beeinflussen Azure-Kosten typischerweise direkt?", "options": ["Ressourcennutzung", "Ressourcenstandort/Region", "Name der Ressourcengruppe", "Azure Portal Sprache"], "answer": [0, 1], "why": "Kosten hängen stark von Nutzung und Region ab.", "wrong": ["Name der Ressourcengruppe ist egal.", "Portalsprache ist egal."], "tip": "Kosten = was, wie viel, wo."}, {"cat": "Kosten", "type": "single", "q": "Du möchtest vor der Bereitstellung grob berechnen, was Azure-Ressourcen kosten. Was nutzt du?", "options": ["TCO Calculator", "Pricing Calculator", "Azure Monitor", "Azure Service Health"], "answer": [1], "why": "Der Pricing Calculator schätzt Kosten geplanter Azure-Ressourcen.", "wrong": ["TCO vergleicht eher On-Premises vs. Cloud.", "Monitor überwacht.", "Service Health meldet Ausfälle."], "tip": "Preis vorab = Pricing Calculator."}, {"cat": "Tools", "type": "single", "q": "Ein Linux-Admin möchte Azure per Bash verwalten. Welches Tool passt am besten?", "options": ["Azure CLI", "Azure PowerShell", "Azure Portal", "ARM Template"], "answer": [0], "why": "Azure CLI ist sehr beliebt für Bash/Linux-Shells.", "wrong": ["PowerShell ist cmdlet-basiert.", "Portal ist GUI.", "ARM Template ist deklaratives Deployment."], "tip": "Bash = CLI."}, {"cat": "Tools", "type": "single", "q": "Du willst Azure-Ressourcen deklarativ und wiederholbar bereitstellen. Was nutzt du?", "options": ["ARM Templates", "Service Health", "Azure Advisor", "Microsoft Entra ID"], "answer": [0], "why": "ARM Templates beschreiben Infrastruktur als Code für wiederholbare Deployments.", "wrong": ["Service Health meldet Ausfälle.", "Advisor empfiehlt.", "Entra ID verwaltet Identitäten."], "tip": "ARM Template = Bauplan."}, {"cat": "Tools", "type": "single", "q": "Welche Komponente verarbeitet Azure-Bereitstellungen und stellt Konsistenz sicher?", "options": ["Azure Resource Manager", "Microsoft Entra ID", "Azure Service Health", "Azure Files"], "answer": [0], "why": "Azure Resource Manager ist die Verwaltungs- und Bereitstellungsebene für Azure-Ressourcen.", "wrong": ["Entra ID verwaltet Identitäten.", "Service Health meldet Status.", "Files ist Storage."], "tip": "ARM = Azure-Ressourcen verwalten."}];
+let state = JSON.parse(localStorage.getItem("az900academy")||'{"xp":0,"streak":0,"seen":{},"wrong":[],"dark":false}');
+let queue=[], idx=0, mode="learn", answered=false, session=[];
+
+if(state.dark) document.body.classList.add("dark");
+function save(){localStorage.setItem("az900academy",JSON.stringify(state));}
+function letters(arr){return arr.map(i=>String.fromCharCode(65+i)).join(", ");}
+function same(a,b){a=[...a].sort((x,y)=>x-y); b=[...b].sort((x,y)=>x-y); return a.length===b.length && a.every((v,i)=>v===b[i]);}
+function shuffle(a){return [...a].sort(()=>Math.random()-0.5)}
+function cats(){return [...new Set(QUESTIONS.map(q=>q.cat))];}
+
+function renderDashboard(){
+ document.getElementById("dashboard").classList.remove("hidden"); document.getElementById("quiz").classList.add("hidden"); document.getElementById("result").classList.add("hidden");
+ let done=Object.keys(state.seen).length, total=QUESTIONS.length, pct=Math.round(done/total*100);
+ document.getElementById("overall").style.width=pct+"%"; document.getElementById("overallText").textContent=`${done} von ${total} Fragen beantwortet (${pct} %)`;
+ document.getElementById("xp").textContent="⭐ XP "+state.xp; document.getElementById("streak").textContent="🔥 Streak "+state.streak;
+ document.getElementById("topics").innerHTML=cats().map(c=>{
+   let qs=QUESTIONS.map((q,i)=>[q,i]).filter(x=>x[0].cat===c);
+   let seen=qs.filter(x=>state.seen[x[1]]).length, p=Math.round(seen/qs.length*100);
+   return `<div class="topic"><div><b>${c}</b><div class="bar" style="width:260px;max-width:55vw"><div class="fill" style="width:${p}%"></div></div></div><span class="pill">${seen}/${qs.length}</span></div>`
+ }).join("");
+}
+function toggleDark(){state.dark=!state.dark;document.body.classList.toggle("dark");save();}
+function startLearn(){mode="Lernmodus"; queue=QUESTIONS.map((q,i)=>i); idx=0; session=[]; showQuiz();}
+function startWeak(){
+ mode="Schwächenmodus";
+ let weak=[...new Set([...state.wrong, ...QUESTIONS.map((q,i)=> (["Governance","Architektur","Cloud Concepts"].includes(q.cat)?i:null)).filter(x=>x!==null)])];
+ queue=weak.length?weak:QUESTIONS.map((q,i)=>i); idx=0; session=[]; showQuiz();
+}
+function startExam(){mode="Prüfungsmodus"; queue=shuffle(QUESTIONS.map((q,i)=>i)).slice(0,20); idx=0; session=[]; showQuiz();}
+function showQuiz(){
+ document.getElementById("dashboard").classList.add("hidden"); document.getElementById("result").classList.add("hidden"); document.getElementById("quiz").classList.remove("hidden");
+ renderQ();
+}
+function renderQ(){
+ answered=false; document.getElementById("next").disabled=true; document.getElementById("feedback").style.display="none";
+ let q=QUESTIONS[queue[idx]];
+ document.getElementById("modePill").textContent=mode; document.getElementById("numPill").textContent=`Frage ${idx+1}/${queue.length}`; document.getElementById("catPill").textContent=q.cat;
+ document.getElementById("quizbar").style.width=Math.round(idx/queue.length*100)+"%";
+ document.getElementById("type").textContent=q.type==="multi" ? "Mehrere Antworten möglich" : "Eine Antwort";
+ document.getElementById("question").textContent=q.q;
+ let typ=q.type==="multi"?"checkbox":"radio";
+ document.getElementById("options").innerHTML=q.options.map((o,i)=>`<label><input name="opt" type="${typ}" value="${i}"><span>${String.fromCharCode(65+i)}) ${o}</span></label>`).join("");
+}
+function selected(){return [...document.querySelectorAll('input[name="opt"]:checked')].map(x=>Number(x.value));}
+function check(){
+ if(answered) return;
+ let sel=selected(); if(!sel.length) return alert("Wähle erst eine Antwort aus 🙂");
+ answered=true;
+ let qi=queue[idx], q=QUESTIONS[qi], ok=same(sel,q.answer);
+ session.push({qi,sel,ok});
+ state.seen[qi]=true;
+ if(ok){state.xp+=100;state.streak+=1;state.wrong=state.wrong.filter(x=>x!==qi);} else {state.streak=0;if(!state.wrong.includes(qi))state.wrong.push(qi);}
+ save();
+ let fb=document.getElementById("feedback"); fb.style.display="block"; fb.className="feedback "+(ok?"right":"wrong");
+ if(mode==="Prüfungsmodus"){fb.innerHTML= ok ? "<b>✅ Antwort gespeichert.</b>" : "<b>Antwort gespeichert.</b>";}
+ else {
+   fb.innerHTML=(ok?"<b>✅ Richtig!</b>":"<b>❌ Nicht ganz.</b>")+`<br><br><b>Richtig:</b> ${letters(q.answer)}<br><br>${q.why}<br><br><b>Warum die anderen falsch sind:</b><br>${q.wrong.map(x=>"• "+x).join("<br>")}<br><br><b>Merksatz:</b> ${q.tip}`;
+ }
+ document.getElementById("next").disabled=false;
+}
+function next(){ if(idx<queue.length-1){idx++;renderQ();} else finish();}
+function finish(){
+ document.getElementById("quiz").classList.add("hidden"); document.getElementById("result").classList.remove("hidden");
+ let correct=session.filter(x=>x.ok).length, pct=Math.round(correct/session.length*100);
+ document.getElementById("score").textContent=`${correct}/${session.length} (${pct} %)`;
+ document.getElementById("resultText").textContent=pct>=85?"Sehr gut – prüfungsnah stark.":pct>=70?"Solide, aber die falschen Fragen nochmal wiederholen.":"Da sind noch ein paar AZ-900-Fallen drin – Schwächenmodus starten.";
+ document.getElementById("review").innerHTML=session.map((s,n)=>{
+   let q=QUESTIONS[s.qi];
+   return `<div class="reviewItem"><b>${n+1}. ${q.cat}</b> ${s.ok?"✅":"❌"}<br>${q.q}<br><span class="muted">Deine Antwort: ${letters(s.sel)||"-"} | Richtig: ${letters(q.answer)}</span><br><br>${q.why}<br><b>Merksatz:</b> ${q.tip}</div>`;
+ }).join("");
+}
+function home(){renderDashboard();}
+function resetProgress(){if(confirm("Fortschritt wirklich löschen?")){state={xp:0,streak:0,seen:{},wrong:[],dark:state.dark};save();renderDashboard();}}
+renderDashboard();
+</script>
+</body>
+</html>
